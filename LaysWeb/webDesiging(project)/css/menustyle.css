@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background-image: url(../image/HD-Mouth-Watering-Food-Wallpapers-for-Desktop-12_4d470f76dc99e18ad75087b1b8410ea9cropped1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.header .background {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  height: 100vh;
+}
+
+.header .contact {
+  width: 100%;
+}
+
+.header .contact .contactID {
+  padding: 10px 40px;
+}
+
+.header .contact li {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+.header .contact li i {
+  color: goldenrod;
+  padding: 0 5px 0 10px;
+}
+
+.header .contact .contactID .item {
+  color: goldenrod;
+}
+
+.header nav {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  margin-top: 40px;
+}
+
+.header nav .shopTitle {
+  width: 35%;
+  padding: 0 10%;
+  font-size: 45px;
+  font-family: "Dancing Script", cursive;
+}
+
+.header nav .shopTitle::after {
+  content: "Nepali Cusine";
+  font-size: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.header nav a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.5px;
+  margin-top: 100px;
+  padding: 0 25px;
+}
+
+.header nav .reg {
+  border: 2px solid red;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: red;
+  box-shadow: 0 2px 4px 0 rgb(207, 55, 55);
+}
+
+.header nav .bannerTitle {
+  position: absolute;
+  top: 45%;
+  right: 26%;
+  width: 35%;
+  align-items: center;
+}
+
+.header nav .bannerTitle h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: goldenrod;
+  position: relative;
+}
+
+.header nav .bannerTitle h1::after {
+  content: "Menu";
+  position: absolute;
+  padding-left: 25px;
+  color: white;
+}
+
+.header nav .bannerTitle h2 {
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  padding-left: 14%;
+}
+
+.menu {
+  margin-top: 5%;
+}
+.menu h1 {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  color: red;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.menu .variety {
+  justify-content: center;
+  width: 80%;
+  margin: 4% auto;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.menu .variety li {
+  cursor: pointer;
+  margin: 0;
+  width: 10%;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 900;
+  color: black;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.5px;
+  margin-top: 1%;
+  margin-left: 1%;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: 2px solid gray;
+  box-shadow: 0 2px 2px 0 gray;
+  transition: all 0.5s ease;
+}
+
+.menu .variety li:focus {
+  background-color: red;
+  border: 2px solid red;
+  color: white;
+}
+
+.menu .menucard {
+  width: 80%;
+  display: flex;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+
+.menu .list {
+  width: 40%;
+  margin: 0 5% 5% 5%;
+}
+.menu .menucard .list .item {
+  display: flex;
+  gap: 4em;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.menu .menucard .list .item .foodTitle {
+  width: 50%;
+  color: red;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+
+.menu .menucard .list .item .price {
+  width: 5%;
+  color: red;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: "Bebas Neue", cursive;
+}
+
+.menu .menucard .list .item .dots {
+  border-bottom: 2px dotted rgb(182, 182, 182);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 37%;
+  text-align: center;
+}
+.menu .menucard .list .iteminfo {
+  width: 80%;
+  color: rgb(71, 31, 7);
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+}
+
+.footer {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: red;
+  text-align: center;
+}
+
+.footer .restroinfo h1 {
+  color: white;
+  font-size: 45px;
+  font-family: "Dancing Script", cursive;
+  margin: 5% 0;
+}
+
+.footer .restroinfo h1::after {
+  padding-left: 5px;
+  content: "Nepali Cusine";
+  font-size: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.footer .restroinfo p {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.footer .icons i {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+.footer .ending p {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.footer .ending h3 {
+  color: goldenrod;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.arrow .icon {
+  cursor: pointer;
+  padding: 20px 22px;
+  background-color: goldenrod;
+  border-radius: 50%;
+}
+
+.arrow .icon a {
+  text-decoration: none;
+  color: gray;
+}
+
+.arrow:hover .icon {
+  animation: ripple 1.5s ease infinite;
+}
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0.1;
+    transform: scale(3);
+  }
+}
